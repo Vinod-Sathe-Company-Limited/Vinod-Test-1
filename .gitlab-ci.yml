@@ -27,7 +27,7 @@ test:
   stage: test
   tags:
    - docker-executor
-  script:
+  script: "test string"
    #- pipenv run python setup.py test
    #- mv coverage.xml htmlcov
   #artifacts:
