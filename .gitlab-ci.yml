@@ -17,7 +17,7 @@ cache:
 
 stages:
   - test
-  - deploy
+ #  - deploy
 
 # The YAML file defines a set of jobs with constraints stating when they should be run. 
 # You can specify an unlimited number of jobs which are defined as top-level elements with an arbitrary name and always have to contain at least the script clause.
@@ -34,7 +34,7 @@ test:
     paths:
     - htmlcov
      
-code_quality:
+# code_quality:
   tags:
     - docker-executor
   image: docker:stable
@@ -54,7 +54,7 @@ code_quality:
         "registry.gitlab.com/gitlab-org/security-products/codequality:$SP_VERSION" /code
     - more gl-code-quality-report.json
   artifacts:
-    paths: [gl-code-quality-report.json]
+    paths: [gl-code-quality-report.json] # 
 
 
 code_analysis:
