@@ -25,8 +25,8 @@ stages:
 # It is also specified that only the master branch will be subject of this job. 
 test:
   stage: test
-  tags:
-   - docker-executor
+  #tags:
+   #- docker-executor
   script: "test string"
    #- pipenv run python setup.py test
    #- mv coverage.xml htmlcov
