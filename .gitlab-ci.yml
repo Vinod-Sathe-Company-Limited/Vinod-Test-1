@@ -28,11 +28,11 @@ test:
   tags:
    - docker-executor
   script:
-   - pipenv run python setup.py test
-   - mv coverage.xml htmlcov
-  artifacts:
-    paths:
-    - htmlcov
+   #- pipenv run python setup.py test
+   #- mv coverage.xml htmlcov
+  #artifacts:
+   # paths:
+   # - htmlcov
      
 #  code_quality:
 #   tags:
